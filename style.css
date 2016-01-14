@@ -101,7 +101,7 @@
 }
 .hostyle
 {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Raleway', sans-serif;
 	/*color: #c6027f;	*/
 	color: #33A29D;
 	font-size: 60px;
@@ -240,6 +240,11 @@
 	width: 80%;
 	float: right;
 }
+.img-responsive.uwaterloo
+{
+    max-width: 90%;
+    margin-bottom: 20px;
+}
 
 .fh-desc h3
 {
@@ -259,9 +264,13 @@
 	width: 90%;
 }
 
+.fh-desc.zeropadding{
+    margin-top: 0
+}
 
-
-
+.feature-icons.toppadding{
+    margin-top: 23%;
+}
 
 /*------------------------------------------/
 /-----------------Gallery-------------------/
