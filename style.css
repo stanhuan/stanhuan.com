@@ -9,10 +9,12 @@
 .banner
 {
     background-image: url(images/mainbg.jpg);
+    filter: blur(100px);
+    opacity: 10%;
     background-position: center;
     background-position: bottom;
     background-size: cover;
-/*
+/*=
 	background-color: #341F48;
 	background: -moz-linear-gradient(left, #341F48 50%, #2b193c 50%);
 	background: -webkit-linear-gradient(left, #341F48 50%, #2b193c 50%);
@@ -93,7 +95,7 @@
     color: #33A29D;
 }
 .logos{
-    opacity: 0;
+    opacity: 100%;
     padding: 20px;
 }
 .barlogo{
