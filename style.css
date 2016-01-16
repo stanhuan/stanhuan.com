@@ -433,7 +433,7 @@ figure.effect-Beauty img {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
+	transform: scale(1.05);
 	width: 100%;
 }
 
@@ -574,7 +574,9 @@ figure.effect-Beauty:hover p {
 /-----------------Team----------------------/
 /------------------------------------------*/
 
-
+.resumebtn{
+   max-height: 0px;  
+}
 
 
 
@@ -686,9 +688,12 @@ figure.effect-Beauty:hover p {
 }
 .foot-logo
 {
-	font-family: 'Pacifico', cursive;
-	color: #3EC9C3;	
-	font-size: 30px;
+	ffont-size: 40px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	/*color: #c6027f;	*/
+	color: #33A29D;
+	font-size: 300%;
 	text-align: center;
 }
 .foot-text
