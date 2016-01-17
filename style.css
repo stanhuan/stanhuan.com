@@ -659,7 +659,7 @@ figure.effect-Beauty:hover p {
 
 .address
 {
-	padding: 60px 0px;
+	padding: 0px 0px;
 	background-color: rgba(0,0,0,0.1)
 }
 .info p
@@ -732,6 +732,10 @@ margin-top: 20px;
 .centertext
 {
 text-align: center;
+    vertical-align: middle;
+}
+.verticalalign{
+    vertical-align: middle;
 }
 .btn-or
 {
