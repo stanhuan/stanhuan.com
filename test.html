@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1679161092361660',
+	      xfbml      : true,
+	      version    : 'v2.5'
+	    });
+	    FB.login(function(){
+		  // Note: The call will only work if you accept the permission request
+		  FB.api('/me/feed', 'post', {message: 'Hello, world!'});
+		}, {scope: 'publish_actions'});
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "https://connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+</body>
+</html>
