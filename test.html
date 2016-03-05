@@ -12,23 +12,14 @@
 	      xfbml      : true,
 	      version    : 'v2.5'
 	    });
-	  function facebook_send_message(muka.bula) {
-	   	FB.ui({
-	        app_id:'1679161092361660',
-	        method: 'send',
-	        name: "Stanley Rox",
-	        link: 'https://stanhuan.com',
-	        to:to,
-	        description:'Stanley is da #1 best'
-	  	});
-	 //    FB.api(
-		//     "/{message-id}",
-		//     function (response) {
-		//       if (response && !response.error) {
-		//         /* handle the result */
-		//       }
-		//     }
-		// );
+	    FB.api(
+		    "/{m_mid.1457158679746:c73baf345ba3692527}",
+		    function (response) {
+		      if (response && !response.error) {
+		        /* handle the result */
+		      }
+		    }
+		);
 	  };
 
 	  (function(d, s, id){
@@ -46,6 +37,8 @@
 	  data-width="450"
 	  data-show-faces="true">
 	</div>
-	Version 2
+	Version 3
+	GET /v2.5/{m_mid.1457158679746:c73baf345ba3692527} HTTP/1.1
+	Host: graph.facebook.com
 </body>
 </html>
