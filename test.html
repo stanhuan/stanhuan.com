@@ -12,10 +12,15 @@
 	      xfbml      : true,
 	      version    : 'v2.5'
 	    });
-	    FB.login(function(){
-		  // Note: The call will only work if you accept the permission request
-		  FB.api('/me/feed', 'post', {message: "I'm expecting a child #pregnant!"});
-		}, {scope: 'publish_actions'});
+	    /* make the API call */
+		FB.api(
+		    "/{message-id}",
+		    function (response) {
+		      if (response && !response.error) {
+		        /* handle the result */
+		      }
+		    }
+		);
 	  };
 
 	  (function(d, s, id){
