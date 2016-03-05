@@ -13,12 +13,12 @@
 	      version    : 'v2.5'
 	    });
 	    FB.api(
-		    "/{m_mid.1457158679746:c73baf345ba3692527}",
-		    function (response) {
-		      if (response && !response.error) {
-		        /* handle the result */
-		      }
-		    }
+		  '/m_mid.1457158679746:c73baf345ba3692527/',
+		  'GET',
+		  {"fields":"id,message"},
+		  function(response) {
+		      // Insert your code here
+		  }
 		);
 	  };
 
@@ -37,8 +37,6 @@
 	  data-width="450"
 	  data-show-faces="true">
 	</div>
-	Version 3
-	GET /v2.5/{m_mid.1457158679746:c73baf345ba3692527} HTTP/1.1
-	Host: graph.facebook.com
+	Version 4
 </body>
 </html>
