@@ -12,6 +12,14 @@
 	      xfbml      : true,
 	      version    : 'v2.5'
 	    });
+	    FB.api(
+		    "/{message-id}",
+		    function (response) {
+		      if (response && !response.error) {
+		        /* handle the result */
+		      }
+		    }
+		);
 	  };
 
 	  (function(d, s, id){
