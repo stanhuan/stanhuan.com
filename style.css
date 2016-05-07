@@ -12,7 +12,7 @@
     filter: blur(100px);
     opacity: 10%;
     background-position: center;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
 /*=
 	background-color: #341F48;
@@ -91,8 +91,8 @@
 	display: table;
 	width: 100%;
 }
-.greencolor{
-    color: #33A29D;
+.redcolor{
+    color: #D8716A;
 }
 .logos{
     opacity: 100%;
@@ -103,11 +103,10 @@
 }
 .hostyle
 {
-	ffont-size: 40px;
+	font-size: 50px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
-	/*color: #c6027f;	*/
-	color: #33A29D;
+	color: #CB5750;
 	font-size: 300%;
 }
 .pstyle
@@ -512,7 +511,7 @@ figure.effect-Beauty:hover p {
 	font-size: 18px;
 	margin: 0px;
 }
-.notes button
+button
 {
 	display: inline-block;
 	border: medium none;
