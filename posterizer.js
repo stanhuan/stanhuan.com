@@ -37,6 +37,19 @@ $(document).ready(function(){
     p.add(rect);
     b.add(rect);
     
+    fabric.Image.fromURL('sauga.png', function(oImg) {
+        p.add(oImg.set({
+            width: 200,
+            height: 97
+        }));
+        window.open(p.toDataURL());
+    }, {
+        crossOrigin: 'Anonymous'
+    });
+    
+    
+    //window.open(p.toDataURL('png'));
+    
     $(window).resize(function resizeCanvases(){
         console.log('Window Resized');
         var element = document.getElementById('poster-div');
@@ -60,6 +73,16 @@ $(document).ready(function(){
         width: width
     });*/
 });
+
+/*$('.p-save').on('click', saveImg);
+function saveImg(){
+    console.log('export image');
+    if (!fabric.Canvas.supports('toDataURL')) {
+        alert('This browser doesn\'t provide means to serialize canvas to an image');
+    }
+    else {
+        window.open(p.toDataURL('png'));
+    }*/
 
 /*function createFabric(element){
     var width = $(element).width();
