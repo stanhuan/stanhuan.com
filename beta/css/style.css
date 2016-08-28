@@ -88,35 +88,35 @@ div.social-icon.email{
     background-image: url('../beta/images/Email.png');
 }
 div.social-icon.email:hover{
-    background-image: url(/images/Emailw.png);
+    background-image: url('../images/Emailw.png');
     background-color: #ea4335;
 }
 div.social-icon.linkedin{
-    background-image: url(/images/LinkedIn.png);
+    background-image: url('../images/LinkedIn.png');
 }
 div.social-icon.linkedin:hover{
-    background-image: url(/images/LinkedInw.png);
+    background-image: url('../images/LinkedInw.png');
     background-color: #0077b5;
 }
 div.social-icon.design{
-    background-image: url(/images/Design%20Portfolio.png);
+    background-image: url('../images/Design%20Portfolio.png');
 }
 div.social-icon.design:hover{
-    background-image: url(/images/Design%20Portfoliow.png);
+    background-image: url('../images/Design%20Portfoliow.png');
     background-color: #ff9933;
 }
 div.social-icon.resume{
-    background-image: url(/images/Resume.png);
+    background-image: url('../images/Resume.png');
 }
 div.social-icon.resume:hover{
-    background-image: url(/images/Resumew.png);
+    background-image: url('../images/Resumew.png');
     background-color: #6cc644;
 }
 div.social-icon.github{
-    background-image: url(/images/GitHub.png);
+    background-image: url('../images/GitHub.png');
 }
 div.social-icon.github:hover{
-    background-image: url(/images/GitHub.png);
+    background-image: url('../images/GitHub.png');
     background-color: #810081;
 }
 
@@ -211,7 +211,7 @@ div#side-hero{
     margin-left: -15px;
     margin-top: -15px;
     margin-bottom: -15px;
-    background-image: url(/images/floaty_hero.png);
+    background-image: url('../images/floaty_hero.png');
     background-size: cover;
     padding-bottom: 50%;
 }
