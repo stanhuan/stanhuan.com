@@ -85,7 +85,7 @@ div.social-icon{
 }
 
 div.social-icon.email{
-    background-image: url('images/Email.png');
+    background-image: url('../images/Email.png');
 }
 div.social-icon.email:hover{
     background-image: url(/images/Emailw.png);
