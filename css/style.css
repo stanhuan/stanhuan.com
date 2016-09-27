@@ -1,3 +1,7 @@
+a{
+    color: black
+}
+
 p{
     text-align: justify;
     margin: 5px;
@@ -211,7 +215,6 @@ div#side-hero{
     margin-left: -15px;
     margin-top: -15px;
     margin-bottom: -15px;
-    background-image: url('../images/floaty_hero.png');
     background-size: cover;
     padding-bottom: 50%;
 }
