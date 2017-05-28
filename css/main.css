@@ -154,17 +154,79 @@ nav a:hover {
    Font CSS
    ======== */
 @font-face {
-  font-family: '../UbuntuTitling-Bold';
-  src: url('../UbuntuTitling-Bold.eot');
-  src: url('../UbuntuTitling-Bold.ttf') format('truetype'),
-       url('../UbuntuTitling-Bold.svg#UbuntuTitling-Bold') format('svg'),
-       url('../UbuntuTitling-Bold.eot?#iefix') format('embedded-opentype');
+  font-family: '../fonts/UbuntuTitling-Bold';
+  src: url('../fonts/UbuntuTitling-Bold.eot');
+  src: url('../fonts/UbuntuTitling-Bold.ttf') format('truetype'),
+       url('../fonts/UbuntuTitling-Bold.svg#UbuntuTitling-Bold') format('svg'),
+       url('../fonts/UbuntuTitling-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
+/* ===========
+   Logo Styles
+   =========== */
 
+.name {
+  font-family: 'UbuntuTitling-Bold';
+  text-transform: uppercase;
+  font-size: 30pt;
+  font-weight: normal;
+  line-height: 0.77;
+  display: inline-block;
+  margin: 3%;
+  color: #222;
+  white-space: nowrap;
+}
 
+#firstname, #lastname {
+    /* background: #F0F300; */
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #FFFFFF 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  text-decoration: none;
+  transition: background-position 0.75s cubic-bezier(0,1.01,.36,.93);
+}
+
+.name:hover #firstname, .name:hover #lastname {
+  background-position: -99.99% 0;
+}
+
+#firstname {
+  padding-top: 2%;
+}
+
+#nley {
+  padding-right: 3%;
+}
+
+#st {
+    padding-left: 4%;
+    display: inline-block;
+    margin: 0 0.75% 0 0.5%;
+    transform: scale(1.065,1.0);
+}
+#hu {
+    display: inline-block;
+    margin: 0 -2% 0 -2.4%;
+    padding-left: 4.25%;
+    transform: scale(0.943,1.0);
+}
+
+#ng {
+  padding-right: 3%;
+  /*animation: slideRight 0.75s ease-out forwards reverse, fadeOut 0.1s ease-in both;*/
+}
+
+@keyframes slideRight {
+  from {transform: translateX(0);}
+  to {transform: translateX(50%);}
+}
+
+@keyframes fadeOut {
+  from {opacity: 100%;}
+  to {opacity: 0;}
+}
 
 
 
