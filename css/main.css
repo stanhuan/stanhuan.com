@@ -69,16 +69,15 @@ body {
     ALL: Orange Theme
    =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
 .footer-container,
 .main aside {
     border-top: 20px solid #e44d26;
 }
 
-.header-container,
+.header-container {
+    background: #F0F300;
+}
+
 .footer-container,
 .main aside {
     background: #f16529;
@@ -101,19 +100,17 @@ nav ul {
 nav a {
     display: block;
     margin-bottom: 10px;
-    padding: 15px 0;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+    color: #222;
+    text-transform: uppercase;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #222;
 }
 
 nav a:hover {
@@ -154,13 +151,28 @@ nav a:hover {
    Font CSS
    ======== */
 @font-face {
-  font-family: '../fonts/UbuntuTitling-Bold';
+  font-family: 'UbuntuTitling-Bold';
   src: url('../fonts/UbuntuTitling-Bold.eot');
   src: url('../fonts/UbuntuTitling-Bold.ttf') format('truetype'),
        url('../fonts/UbuntuTitling-Bold.svg#UbuntuTitling-Bold') format('svg'),
        url('../fonts/UbuntuTitling-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+h1 {
+    font-family: 'UbuntuTitling-Bold';
+    text-transform: uppercase;
+    font-size: 16pt;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
 }
 
 /* ===========
@@ -174,14 +186,14 @@ nav a:hover {
   font-weight: normal;
   line-height: 0.77;
   display: inline-block;
-  margin: 3%;
+  margin-left: -0.5%;
   color: #222;
   white-space: nowrap;
 }
 
 #firstname, #lastname {
     /* background: #F0F300; */
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #FFFFFF 50%);
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50.1%, #FFFFFF 49.9%);
   background-position: -0% 0;
   background-size: 200% auto;
   text-decoration: none;
@@ -228,13 +240,58 @@ nav a:hover {
   to {opacity: 0;}
 }
 
+.header-container {
+    padding-top: 50px;
+}
 
+.hero h2 {
+    font-size: 48pt;
+    line-height: 1;
+    margin-bottom: 10px;
+}
 
+.laptop {
+    position: relative;
+    width: 800px;
+    left: 550px;
+    top: -300px;
+}
 
+.screen {
+    background-image: url("https://zellox.com/wp-content/uploads/2016/04/design-3.png");
+    background-size: cover;
+    position: relative;
+    height: 337px;
+    top: -739px;
+    width: 528px;
+    left: 687px;
+}
 
+.hero {
+    height: 297px;
+}
 
+.links {
+    font-size: 16pt;
+}
 
+.links a {
+    color: #505050;
+    margin-right: 5px;
+}
 
+.links a:visited {
+    color: #505050;
+}
+
+.links a:hover {
+    color: #222;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
 /* ==========================================================================
