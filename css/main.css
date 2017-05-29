@@ -255,6 +255,7 @@ h2 {
     width: 800px;
     left: 550px;
     top: -300px;
+    z-index: 5;
 }
 
 .screen {
@@ -293,6 +294,94 @@ html, body {
     overflow-x: hidden;
 }
 
+/* ========
+   Card CSS
+   ======== */
+   .card-container {
+       margin: 0;
+   }
+
+   .card-container a {
+       text-decoration: none;
+   }
+
+   .card {
+       display: inline-block;
+       background-size: cover;
+       height: 300px;
+       width: calc(50% - 10px);
+       margin: 0 5px 5px 0;
+       color: white;
+       padding: 15px 20px;
+       box-sizing: border-box;
+       background-position: center;
+       position: relative;
+       box-shadow: 0 0 10px #aaa;
+       transition: transform 0.75s cubic-bezier(0,1.01,.36,.93), width .5s ease-in;
+   }
+
+   a:hover .card {
+       box-shadow: 0 0 20px #aaa;
+       transform: scale(1.1, 1.1);
+   }
+   
+   .card h3 {
+       text-transform: uppercase;
+       font-size: 10pt;
+       margin: 0;
+   }
+
+   .card h4, .card h5 {
+       position: absolute;
+       left: 20;
+       width: calc(100% - 40px);
+       line-height: 1;
+   }
+
+   .card h4 {
+       bottom: 40px;
+       padding: 5px;
+       margin: 0 -5px;
+         /* background: #F0F300; */
+        background-image: linear-gradient(to right, rgba(255,255,255,0) 50.15%, #F0F300 49.95%);
+        background-position: -0% 0;
+        background-size: 200% auto;
+        text-decoration: none;
+        transition: background-position 0.75s cubic-bezier(0,1.01,.36,.93), color 0.75s cubic-bezier(0,1.01,.36,.93);
+   }
+
+   a:hover .card h4 {
+       background-position: -99.99% 0;
+       color: #222;
+   }
+
+   .card h5 {
+       bottom: 0;
+       font-weight: 300;
+   }
+
+   .card-pcc {
+       background-image: url("http://andyzhang.net/img/home/htn-1.png");
+   }
+
+   @media only screen and (min-width: 650px) {
+        .card {
+            width: calc(33% - 10px);
+        }
+   }
+
+   @media only screen and (min-width: 820px) {
+        .card {
+            width: calc(25% - 10px);
+        }
+   }
+
+    @media only screen and (min-width: 1045px) {
+        .card {
+            width: calc(20% - 10px);
+        }
+   }
+
 
 /* ==========================================================================
    Media Queries
@@ -305,11 +394,17 @@ html, body {
    ==================== */
 
     nav a {
-        float: left;
-        width: 27%;
+        float: right;
+        margin: 0 15px;
+        z-index: 999;
+        /*width: 27%;
         margin: 0 1.7%;
         padding: 25px 2%;
-        margin-bottom: 0;
+        margin-bottom: 0;*/
+    }
+
+    nav a:hover {
+        text-decoration: none;
     }
 
     nav li:first-child a {
@@ -363,10 +458,10 @@ html, body {
     WIDE: Main
    ============ */
 
-    .main article {
+    /*.main article {
         float: left;
-        width: 57%;
-    }
+        width: calc(25% - 20px);
+    }*/
 
     .main aside {
         float: right;
