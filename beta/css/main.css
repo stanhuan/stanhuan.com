@@ -468,6 +468,62 @@ html, body {
        background-color: #ececec;
    }
 
+   .skills-container ul {
+        list-style: none;
+        padding: 0;
+   }
+
+   .skills-container li {
+        margin: 5px 0;
+        padding: 1px 0 2px 10px;
+        cursor: pointer;
+   }
+
+   .highlight-animation {
+        background-image: linear-gradient(to right, rgba(255,255,255,0) 50.15%, #F0F300 49.95%);
+        background-position: -0% 0;
+        background-size: 200% auto;
+        text-decoration: none;
+        transition: background-position 0.75s cubic-bezier(0,1.01,.36,.93), color 0.75s cubic-bezier(0,1.01,.36,.93);
+   }
+
+   .highlight-animation:hover {
+       background-position: -99.99% 0;
+   }
+
+   .highlight {
+        background-color: #F0F300;
+   }
+
+   .show-more {
+       height: 60px;
+       width: 60px;
+        margin: -30px auto 0 auto;
+        left: 0;
+        right: 0;
+        display: block;
+        font-family: 'UbuntuTitling-Bold', sans-serif;
+        line-height: 0.75;
+        font-weight: 400;
+        transform: rotate(180deg);
+        transition: all 0.5s ease-out;
+        border: none;
+        background: none;
+        box-shadow: 0 0 10px #aaa;
+        font-size: 16pt;
+        padding: 15px 20px 20px 20px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: #ffffff;
+   }
+
+   .show-more:hover {
+       box-shadow: 0 0 20px #969696;
+   }
+
+   .show-more.close {
+        transform: rotate(0deg);
+   }
 
 /* ==========================================================================
    Media Queries
