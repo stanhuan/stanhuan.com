@@ -66,21 +66,11 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: heme
    =================== */
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
 
 .header-container {
     background: #F0F300;
-}
-
-.footer-container,
-.main aside {
-    background: #f16529;
 }
 
 .title {
@@ -90,6 +80,10 @@ body {
 /* ==============
     MOBILE: Menu
    ============== */
+
+nav {
+    display: none;
+}
 
 nav ul {
     margin: 0;
@@ -135,7 +129,7 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
+    color: #222;
     padding: 20px 0;
 }
 
@@ -248,10 +242,11 @@ h2 {
 }
 
 .hero h2 {
-    font-size: 48pt;
+    font-size: 32pt;
     line-height: 1;
-    margin-top: 54px;
+    font-size: 32pt;
     margin-bottom: 10px;
+    margin-top: 53px;
 }
 
 .laptop {
@@ -307,6 +302,8 @@ html, body {
        display: inline-block;
        height: 307px;
        overflow: hidden;
+       transition: all .5s ease-out;
+       width: 50%;
    }
 
    .card-container a {
@@ -315,17 +312,19 @@ html, body {
 
    .card {
        display: inline-block;
-       background-size: cover;
+       background-size: auto;
+       background-repeat: no-repeat;
        height: 300px;
        width: calc(100% - 10px);
        margin: 0 5px 100px 0;
        color: white;
        padding: 15px 20px;
        box-sizing: border-box;
-       background-position: center;
+       background-position-y: 30%;
+       background-position-x: center;
        position: relative;
        box-shadow: 0 0 5px #aaa;
-       transition: all .5s ease-in, transform 0.75s cubic-bezier(0,1.01,.36,.93);
+       transition: all 0.5s ease-in, transform 0.75s cubic-bezier(0,1.01,.36,.93);
        z-index: 10;
    }
 
@@ -338,7 +337,7 @@ html, body {
    .card h3 {
        text-transform: uppercase;
        font-size: 10pt;
-       margin: 0;
+       margin: 0 0 -5px 0;
    }
 
    .card h4, .card h5 {
@@ -357,7 +356,7 @@ html, body {
         background-position: -0% 0;
         background-size: 200% auto;
         text-decoration: none;
-        transition: background-position 0.75s cubic-bezier(0,1.01,.36,.93), color 0.75s cubic-bezier(0,1.01,.36,.93);
+        transition: background-position 0.75s cubic-bezier(0,1.01,.36,.93), color 0.25s cubic-bezier(0,1.01,.36,.93);
    }
 
    a:hover .card h4 {
@@ -371,7 +370,23 @@ html, body {
    }
 
    .card-pcc {
-       background-image: url("http://andyzhang.net/img/home/htn-1.png");
+       background-image: url("../img/pcc.png");
+       background-color: #1ca635;
+   }
+
+   .card-uw {
+       background-image: url("../img/uw.png");
+       background-color: #57058B;
+   }
+
+   .card-kenna {
+       background-image: url("../img/kenna.png");
+       background-color: #cd1232;
+   }
+
+    .card-founders {
+       background-image: url("../img/founders.png");
+       background-color: #127dcd;
    }
 
    .about-container {
@@ -420,6 +435,7 @@ html, body {
        font-size: 12pt;
        font-weight: 300;
        opacity: 0.5;
+       transition: all 0.5 ease-out;
    }
 
    #clear:hover {
@@ -474,8 +490,10 @@ html, body {
    }
 
    .skills-container li {
+       font-size: 11pt;
+       line-height: 1;
         margin: 5px 0;
-        padding: 1px 0 2px 10px;
+        padding: 5px 5px 4px 5px;
         cursor: pointer;
    }
 
@@ -506,7 +524,7 @@ html, body {
         line-height: 0.75;
         font-weight: 400;
         transform: rotate(180deg);
-        transition: all 0.5s ease-out;
+        transition: all 0.1s ease-out;
         border: none;
         background: none;
         box-shadow: 0 0 10px #aaa;
@@ -521,6 +539,10 @@ html, body {
        box-shadow: 0 0 20px #969696;
    }
 
+   .show-more:active {
+       background-color: #ececec;
+   }
+
    .show-more.close {
         transform: rotate(0deg);
    }
@@ -530,6 +552,10 @@ html, body {
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
+    .hero h2 {
+        font-size: 48pt;
+   }
+   
 
 /* ====================
     INTERMEDIATE: Menu
@@ -616,7 +642,9 @@ html, body {
 /* ===============
     Maximal Width
    =============== */
-
+   nav {
+       display: block;
+   }
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
