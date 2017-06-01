@@ -324,7 +324,7 @@ html, body {
        background-position-x: center;
        position: relative;
        box-shadow: 0 0 5px #aaa;
-       transition: all 0.5s ease-in, transform 0.75s cubic-bezier(0,1.01,.36,.93);
+       transition: all 0.5s ease-in, opacity 0.25s ease-in, transform 0.75s cubic-bezier(0,1.01,.36,.93);
        z-index: 10;
    }
 
@@ -345,6 +345,20 @@ html, body {
        left: 20;
        width: calc(100% - 40px);
        line-height: 1;
+   }
+
+   .invalid {
+        opacity: 0.25;
+   }
+
+   .hidden-card {
+       opacity: 0 !important;
+       width: 0 !important;
+       height: 0 !important;
+       overflow: hidden !important;
+       margin: 0 !important;
+       padding: 0 !important;
+       font-size: 0.1px !important;
    }
 
    .card h4 {
@@ -389,6 +403,14 @@ html, body {
        background-color: #127dcd;
    }
 
+   .expanded {
+       height: auto;
+   }
+
+   .expanded-card {
+       margin-bottom: 10px;
+   }
+
    .about-container {
        background-color: #ececec;
    }
@@ -408,7 +430,7 @@ html, body {
    }
 
    .skills-container .card:hover {
-       transform: scale(1.1);
+       transform: scale(1.05);
    }
 
    .skills-container h1 {
@@ -435,7 +457,7 @@ html, body {
        font-size: 12pt;
        font-weight: 300;
        opacity: 0.5;
-       transition: all 0.5 ease-out;
+       transition: all 0.5s ease-in, color 0.1 ease-out;
    }
 
    #clear:hover {
@@ -510,7 +532,7 @@ html, body {
    }
 
    .highlight {
-        background-color: #F0F300;
+        background-position: -99.99% 0;
    }
 
    .show-more {
