@@ -1,0 +1,36 @@
+---
+layout: default
+experience:
+  - type: 
+    title: Shopify
+    role: Front-End Developer
+    subtitle: Making commerce better for everyone
+    image: https://cdn.shopify.com/assets2/homepage/hero-carousel-present-day@tablet-2x-264703af0c9c80422c0a1cd78594a905b3fe1b30a1db11077bc30b0d38e17289.jpg
+    color: #F4C900
+  - type: 
+    title: PointClickCare
+    role: Front-End UI Developer
+    subtitle: Making commerce better for everyone
+    image: https://cdn.shopify.com/assets2/homepage/hero-carousel-present-day@tablet-2x-264703af0c9c80422c0a1cd78594a905b3fe1b30a1db11077bc30b0d38e17289.jpg
+    color: #F4C900
+  - type: 
+    title: University of Waterloo
+    role: Software Engineering
+    subtitle: Making commerce better for everyone
+    image: https://cdn.shopify.com/assets2/homepage/hero-carousel-present-day@tablet-2x-264703af0c9c80422c0a1cd78594a905b3fe1b30a1db11077bc30b0d38e17289.jpg
+    color: #F4C900
+---
+
+<section class="hero">
+  {{ content }}
+</section>
+
+<section class="experience">
+  {{page.help}}
+  {% for experience in page.experience %}
+    <ul class="card">
+      <span>{{ experience.role }} @{{experience.title }}</span>
+      <span>{{ experience.subtitle }}</span>
+    </ul>
+  {% endfor %}
+</section>

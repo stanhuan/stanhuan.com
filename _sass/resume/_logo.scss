@@ -1,0 +1,55 @@
+.name {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, $highlight-bright-color 50%);
+  background-size: 200% auto;
+  opacity: 0;
+  animation: 1s cubic-bezier(0,1.01,.36,.93) 0.5s 1 highlight;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin-left: -1in;
+  
+  svg {
+    width: auto;
+    height: 43px;
+  }
+
+  &.name--first {
+    padding-top: 1rem;
+    padding-left: calc(1in - 2px);
+    padding-right: 0.8rem;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+  }
+
+  &.name--last {
+    margin-top: -0.5rem;
+    padding-left: calc(1in - 5px);
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.name--container {
+  &:hover {
+    .name {
+      background-image: none;
+      background-color: $highlight-bright-color;
+    }
+  }
+}
+
+@keyframes highlight {
+  0% {
+    background-position: -0% 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    background-position: -100% 0;
+    opacity: 1;
+  }
+}

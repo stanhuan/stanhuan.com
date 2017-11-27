@@ -7,13 +7,17 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
+html {
+  background: url(images/bg.png) no-repeat center top;
+  background-color: #000000;
+  background-size: contain; }
+
 /**
  * Basic styling
  */
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #111;
-  background-color: #fdfdfd;
+  color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -116,10 +120,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
@@ -152,11 +154,18 @@ pre {
   padding-top: 5px; }
 
 /**
+ * Custom classes start here
+ */
+h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: normal;
+  font-size: 9.5vw;
+  line-height: 1; }
+
+/**
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative; }
 
@@ -225,7 +234,6 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
   padding: 30px 0; }
 
 .footer-heading {
@@ -468,3 +476,41 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+@font-face {
+  font-family: 'UbuntuTitling-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UbuntuTitling-Bold.woff") format("woff"); }
+.name {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #F4C900 50%);
+  background-size: 201% auto;
+  opacity: 0;
+  animation: 1s cubic-bezier(0, 1.01, 0.36, 0.93) 0.5s 1 highlight;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  clear: both;
+  float: left;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: -28px; }
+  .name.name--first {
+    padding-top: 0.5rem;
+    padding-left: 30px; }
+  .name.name--last {
+    padding-left: 30px; }
+
+.name--container {
+  margin-top: 1.5rem; }
+  .name--container:hover .name {
+    background-image: none;
+    background-color: #F4E200; }
+
+@keyframes highlight {
+  0% {
+    background-position: -0% 0; }
+  10% {
+    opacity: 1; }
+  100% {
+    background-position: -100% 0;
+    opacity: 1; } }
