@@ -6,6 +6,10 @@ body {
   line-height: 1.5;
 }
 
+.hidden {
+  display: none;
+}
+
 .grid {
   background-color: $white-color;
   height: 11in;
@@ -15,22 +19,30 @@ body {
   display: grid;
   padding: 1in;
   grid-template-columns: 260px auto;
+  grid-template-rows: auto auto;
   text-align: left;
   grid-gap: 50px;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  grid-row-gap: 34px;
+}
+
+.right-container {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 a {
   text-decoration: none;
   color: $text-color;
-  padding-right: 15px;
+  display: block;
 }
 
 .social {
   margin-top: 140px;
 
   a {
-    display: block;
+    padding-right: 15px;
   }
 
   i {
@@ -66,12 +78,6 @@ h2 {
   margin-top: -8px;
 }
 
-.left-container {
-  section {
-    margin-top: 30px;
-  }
-}
-
 p {
   margin: 0;
 }
@@ -80,6 +86,30 @@ section {
   margin-bottom: 40px;
 }
 
-.social {
-  margin-bottom: 38px;
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #0036FF;
+  margin-top: -10px;
+  font-size: 56pt;
+  line-height: 1.2;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #9f9f9f;
+  margin-bottom: 0;
+}
+
+@media print {
+  .grid {
+    box-shadow: none;
+    padding: 1in;
+    margin-top: 30px;
+    margin-left: -5px;
+    margin-right: -10px;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
 }

@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'UbuntuTitling-Bold';
-  font-style: normal;
+  src: url('../fonts/UbuntuTitling-Bold.eot');
+  src: url('../fonts/UbuntuTitling-Bold.ttf') format('truetype'),
+       url('../fonts/UbuntuTitling-Bold.svg#UbuntuTitling-Bold') format('svg'),
+       url('../fonts/UbuntuTitling-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
-  src: url('../fonts/UbuntuTitling-Bold.woff') format('woff');
+  font-style: normal;
 }

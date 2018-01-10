@@ -12,6 +12,18 @@ html {
   background: url(images/bg.png) no-repeat center top;
   background-color: $black-color;
   background-size: contain;
+
+  @include media-query($bp-m) {
+    background-position-y: -100px;
+  }
+
+  @include media-query($bp-l) {
+    background-position-y: -200px;
+  }
+
+  @include media-query($bp-xl) {
+    background-position-y: -300px;
+  }
 }
 
 /**
@@ -68,10 +80,6 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
-  margin-left: $spacing-unit;
-}
-
 li {
   > ul,
   > ol {
@@ -172,11 +180,19 @@ pre {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+  @include media-query($bp-m) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @include media-query($bp-l) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @include media-query($bp-xl) {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 
@@ -221,6 +237,12 @@ pre {
   h1 {
     font-family: 'Playfair Display', sans-serif;
     font-weight: normal;
-    font-size: 9.5vw;
+    font-size: 8.75vw;
     line-height: 1;
+    margin-bottom: 0;
+    text-align: right;
+
+    @include media-query($bp-m) {
+      font-size: 6vw;
+    }
   }

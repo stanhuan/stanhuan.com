@@ -1,23 +1,64 @@
 .name {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, $highlight-color 50%);
-  background-size: 201% auto;
+  background-size: 205% auto;
+  animation-fill-mode: forwards;
   opacity: 0;
   animation: 1s cubic-bezier(0,1.01,.36,.93) 0.5s 1 highlight;
-  animation-fill-mode: forwards;
   display: inline-block;
   clear: both;
   float: left;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-left: -28px;
+  margin-left: -40px;
+
+  @include media-query($bp-m) {
+    margin-left: -60px;
+  }
+
+  @include media-query($bp-l) {
+    margin-left: -80px;
+  }
+
+  @include media-query($bp-xl) {
+    margin-left: -130px;
+  }
 
   &.name--first {
     padding-top: 0.5rem;
     padding-left: 30px;
+
+    @include media-query($bp-m) {
+      padding-left: 60px;
+    }
+
+    @include media-query($bp-l) {
+      padding-left: 80px;
+    }
+  
+    @include media-query($bp-xl) {
+      padding-left: 130px;
+    }
   }
 
   &.name--last {
     padding-left: 30px;
+
+    @include media-query($bp-m) {
+      padding-left: 60px;
+    }
+
+    @include media-query($bp-l) {
+      padding-left: 80px;
+    }
+  
+    @include media-query($bp-xl) {
+      padding-left: 130px;
+    }
+  }
+
+  svg {
+    weight: auto;
+    height: 30px;
   }
 }
 
@@ -42,7 +83,7 @@
   }
 
   100% {
-    background-position: -100% 0;
+    background-position: -95% 0;
     opacity: 1;
   }
 }

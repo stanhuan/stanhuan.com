@@ -5,4 +5,5 @@ type: distinctions
 time: 2017
 show: true
 description: For exceptional contribution to employer during work term
+link: https://uwaterloo.ca/co-operative-education/co-op-students-year-award
 ---

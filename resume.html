@@ -1,0 +1,79 @@
+---
+layout: letterhead
+---
+<div class='left-container'>
+  <section class='education'>
+    <h2>Education</h2>
+    <article>
+      <a href='https://uwaterloo.ca/future-students/programs/software-engineering' target='_blank'>
+        <strong>University of Waterloo</strong>
+        <p>Candidate for Bachelor of Software Engineering, expected 2020</p>
+      </a>
+    </article>
+  </section>
+
+  <section class='skills'>
+    <h2>Skills</h2>
+    {% for skill_group in layout.skills %}
+      <article>
+        <strong>{{ skill_group.label }}</strong>
+        <p>{{ skill_group.items }}</p>
+      </article>
+    {% endfor %}
+  </section>
+
+  <section class='distinctions'>
+    <h2>Distinctions</h2>
+    {% assign sorted_distinctions = site.experience | sort: "resume-order" %}
+    {% for distinction in sorted_distinctions %}
+      {% if distinction.type == 'distinctions' and distinction.show %}
+        <article>
+          <a href={{ distinction.link }} target='_blank'>
+            <strong>{{ distinction.title }}</strong>
+            <date>{{ distinction.time }}</date>
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </section>
+</div>
+
+<div class='right-container'>
+  <section class='work'>
+    <h2>Experience</h2>
+    {% assign sorted_work = site.experience | sort: "resume-order" %}
+    {% for work in sorted_work %}
+      {% if work.type == 'work' %}
+        <article>
+          <a href={{ work.link }} target='_blank'>
+            <strong>{{ work.company }} | {{ work.position }}</strong>
+            <date>{{ work.time }}</date>
+            {{ work.content }}
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  <section class='projects'>
+    <h2>Projects and Leadership</h2>
+    {% assign sorted_projects = site.experience | sort: "resume-order" %}
+    {% for project in sorted_projects %}
+      {% if project.type == 'projects' %}
+        <article>
+          <a href={{ project.link }} target='blank'>
+            <strong>{{ project.title }}</strong>
+            {{ project.content }}
+          </a>
+        </article>
+      {% elsif project.type == 'leadership' %}
+        <article>
+          <a href={{ project.link }} target='blank'>
+            <strong>{{ project.company }} | {{ project.position }}</strong>
+            {{ project.content }}
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </section>
+</div>

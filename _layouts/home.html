@@ -1,24 +1,5 @@
 ---
 layout: default
-experience:
-  - type: 
-    title: Shopify
-    role: Front-End Developer
-    subtitle: Making commerce better for everyone
-    image: https://cdn.shopify.com/assets2/homepage/hero-carousel-present-day@tablet-2x-264703af0c9c80422c0a1cd78594a905b3fe1b30a1db11077bc30b0d38e17289.jpg
-    color: #F4C900
-  - type: 
-    title: PointClickCare
-    role: Front-End UI Developer
-    subtitle: Making commerce better for everyone
-    image: https://cdn.shopify.com/assets2/homepage/hero-carousel-present-day@tablet-2x-264703af0c9c80422c0a1cd78594a905b3fe1b30a1db11077bc30b0d38e17289.jpg
-    color: #F4C900
-  - type: 
-    title: University of Waterloo
-    role: Software Engineering
-    subtitle: Making commerce better for everyone
-    image: https://cdn.shopify.com/assets2/homepage/hero-carousel-present-day@tablet-2x-264703af0c9c80422c0a1cd78594a905b3fe1b30a1db11077bc30b0d38e17289.jpg
-    color: #F4C900
 ---
 
 <section class="hero">
@@ -26,11 +7,36 @@ experience:
 </section>
 
 <section class="experience">
-  {{page.help}}
-  {% for experience in page.experience %}
-    <ul class="card">
-      <span>{{ experience.role }} @{{experience.title }}</span>
-      <span>{{ experience.subtitle }}</span>
-    </ul>
+  <h2>All // Work // Leadership // Education // Awards</h2>
+
+  {% assign sorted_experience = site.experience | sort: "resume-order" %}
+  {% for card in sorted_experience %}
+    {% if card.type == 'work' %}
+      <a href={{ card.link }} target='_blank' class='card' data-tilt>
+        <div>
+          <h3 class='hilite'>{{ card.company }}</h3>
+          <br>
+          <span class='hilite'>{{ card.position }}</span>
+        </div>
+      </a>
+    {% endif %}
   {% endfor %}
+
+  <div class="skills">
+    {% for skill_cat in page.skills %}
+      <h4>{{ skill_cat.title }}</h4>
+      <ul>
+        {% for skill in skill_cat.items %}
+          <li>
+            {{ skill }}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="bio">
+  <h2>About</h2>
+  <h1>Let's create something amazing together</h1>
 </section>

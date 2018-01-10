@@ -31,6 +31,18 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+// Small devices (landscape phones, 576px and up)
+$bp-s:             576px;
+
+// Medium devices (tablets, 768px and up)
+$bp-m:             768px;
+
+// Large devices (desktops, 992px and up)
+$bp-l:              992px;
+
+// Extra large devices (large desktops, 1200px and up)
+$bp-xl:            1200px;
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -39,7 +51,7 @@ $on-laptop:        800px !default;
 //   }
 // }
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
+  @media screen and (min-width: $device) {
     @content;
   }
 }
@@ -55,5 +67,7 @@ $on-laptop:        800px !default;
   "main/syntax-highlighting",
   "common/fonts",
   "common/logo",
-  "common/header"
+  "common/header",
+  "main/card",
+  "main/styles"
 ;
