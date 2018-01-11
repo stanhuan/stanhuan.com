@@ -1,0 +1,141 @@
+.name {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #FCFF00 50%);
+  background-size: 200% auto;
+  opacity: 0;
+  animation: 1s cubic-bezier(0, 1.01, 0.36, 0.93) 0.5s 1 highlight;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin-left: -1in; }
+  .name svg {
+    width: auto;
+    height: 43px; }
+  .name.name--first {
+    padding-top: 1rem;
+    padding-left: calc(1in - 2px);
+    padding-right: 0.8rem;
+    margin-top: -1rem;
+    padding-bottom: 1rem; }
+  .name.name--last {
+    margin-top: -0.5rem;
+    padding-left: calc(1in - 5px);
+    padding-right: 1rem;
+    padding-bottom: 1rem; }
+
+.name--container:hover .name {
+  background-image: none;
+  background-color: #FCFF00; }
+
+@keyframes highlight {
+  0% {
+    background-position: -0% 0; }
+  10% {
+    opacity: 1; }
+  100% {
+    background-position: -100% 0;
+    opacity: 1; } }
+@media print {
+  .name {
+    background-color: #FCFF00 !important; } }
+body {
+  background-color: #E0E0E0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  line-height: 1.5; }
+
+.hidden {
+  display: none; }
+
+.grid {
+  background-color: #ffffff;
+  height: 11in;
+  width: 8.5in;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  padding: 1in;
+  grid-template-columns: 260px auto;
+  grid-template-rows: auto auto;
+  text-align: left;
+  grid-gap: 50px;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  grid-row-gap: 34px; }
+
+.right-container {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+a {
+  text-decoration: none;
+  color: #111;
+  display: block; }
+
+.social {
+  margin-top: 140px; }
+  .social a {
+    padding-right: 15px; }
+  .social i {
+    margin-right: 10px; }
+
+strong {
+  color: #0036FF;
+  font-size: 14pt; }
+
+date {
+  margin-left: 5px; }
+
+ul {
+  padding-left: 16px;
+  margin: 0;
+  list-style-type: square; }
+
+article {
+  margin-bottom: 15px; }
+
+h2 {
+  font-family: 'UbuntuTitling-Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 20pt;
+  margin: 0;
+  margin-left: -5px;
+  margin-top: -8px; }
+
+p {
+  margin: 0; }
+
+section {
+  margin-bottom: 40px; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #0036FF;
+  margin-top: -10px;
+  font-size: 56pt;
+  line-height: 1.2; }
+
+h3 {
+  text-transform: uppercase;
+  color: #9f9f9f;
+  margin-bottom: 0; }
+
+@media print {
+  .grid {
+    box-shadow: none;
+    padding: 1in;
+    margin-top: 30px;
+    margin-left: -5px;
+    margin-right: -10px; }
+
+  body {
+    background-color: #ffffff; } }
+.right-container-letterhead {
+  margin-top: -18px; }
+
+.text-content {
+  grid-column: 1 / span 2; }
+
+.continued-container {
+  grid-column: 1 / span 2; }
