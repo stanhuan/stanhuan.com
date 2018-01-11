@@ -5,12 +5,12 @@
   background-image: url("http://andyzhang.net/img/home/htn-1.png");
   background-size: cover;
   height: 200px;
-  margin-bottom: 30px;
   padding: 30px;
   transform-style: preserve-3d;
   
   &:hover {
     text-decoration: none;
+    z-index: 999;
 
     .hilite {
       background-position: -95% 0;
@@ -18,7 +18,6 @@
   }
 
   span {
-    font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
     margin-left: -30px;
     padding: 5px 10px 10px 30px;
@@ -42,18 +41,36 @@
 }
 
 .skills {
-  padding: 30px 45px 30px 30px;
+  padding: 30px;
   background-color: #ffffff;
   color: black;
 
-  ul {
-    line-height: 30px;
+  li {
+    display: inline-block;
+    padding: 1px 8px;
+    margin-bottom: 4px;
+    background-image: linear-gradient(to right, #efefef 50%, #F4C900 50%);
+    background-size: 205% auto;
+    animation-fill-mode: forwards;
+    transition: background-position 0.5s cubic-bezier(0,1.01,.36,.93);
+
+    &:hover {
+      background-position: -95% 0;
+    }
+  }
+}
+
+.experience-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+
+  a {
+    flex-grow: 1;
   }
 
-  li {
-    display: inline;
-    padding: 4px 10px;
-    margin-right: 3px;
-    background-color: rgb(233, 233, 233);
+  a:last-child {
+    content: '';
+    flex-grow: 1000000000;
   }
 }

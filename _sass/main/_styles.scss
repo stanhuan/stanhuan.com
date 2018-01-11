@@ -1,4 +1,4 @@
-h2 {
+h2, .heading-2 {
   font-family: 'UbuntuTitling-Bold', sans-serif;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -15,12 +15,47 @@ h2 {
   margin-bottom: $spacing-unit * 2;
 }
 
+.gutter-bottom--half {
+  margin-bottom: $spacing-unit / 2;
+}
+
 .gutter-bottom {
   margin-bottom: $spacing-unit;
 }
 
 .experience {
   display: grid;
-  grid-template-columns: [start] 1fr 1fr 1fr [card-end] 1fr [skills] 1fr;
-  grid-template-rows: [heading] auto auto;
+  grid-template-columns: auto [start] 1fr [skills] 238px;
+}
+
+.experience-type {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: right;
+  margin-left: -50px;
+  width: 40px;
+
+  h2 {
+    display: inline-block;
+  }
+}
+
+.links {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 3px;
+
+  a {
+    font-size: 25px;
+    margin-left: 5px;
+    color: #a5a5a5;
+
+    &:visited {
+      color: #a5a5a5;
+    }
+
+    &:hover {
+      color: #cacaca;
+    }
+  }
 }

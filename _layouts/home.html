@@ -4,27 +4,77 @@ layout: default
 
 <section class="hero">
   {{ content }}
+  <div class="links">
+    <a href="./resume" title="Resume" target="_blank"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+    <a href="mailto:s233huan@uwaterloo.ca" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="https://linkedin.com/in/stanhuan" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <a href="https://github.com/stanhuan" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+  </div>
 </section>
 
 <section class="experience">
-  <h2>All // Work // Leadership // Education // Awards</h2>
+  <div class="experience-type">
+    <h2>Education</h2>
+    <h2>Awards</h2>
+    <h2>Leadership</h2>
+    <h2>Work</h2>
+    <h2>All</h2>
+  </div>
+  <div class="experience-grid">
+    {% assign sorted_experience = site.experience | sort: "resume-order" %}
+    {% for card in sorted_experience %}
+      {% if card.type == 'work' %}
+        <a href={{ card.link }} target='_blank' class='card' data-tilt data-tilt-scale= "1.1">
+          <div>
+            <h3 class='hilite'>{{ card.company }}</h3>
+            <br>
+            <span class='hilite'>{{ card.position }}</span>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
 
-  {% assign sorted_experience = site.experience | sort: "resume-order" %}
-  {% for card in sorted_experience %}
-    {% if card.type == 'work' %}
-      <a href={{ card.link }} target='_blank' class='card' data-tilt>
-        <div>
-          <h3 class='hilite'>{{ card.company }}</h3>
-          <br>
-          <span class='hilite'>{{ card.position }}</span>
-        </div>
-      </a>
-    {% endif %}
-  {% endfor %}
+    {% for card in sorted_experience %}
+      {% if card.type == 'work' %}
+        <a href={{ card.link }} target='_blank' class='card' data-tilt data-tilt-scale= "1.1">
+          <div>
+            <h3 class='hilite'>{{ card.company }}</h3>
+            <br>
+            <span class='hilite'>{{ card.position }}</span>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+
+    {% for card in sorted_experience %}
+      {% if card.type == 'work' %}
+        <a href={{ card.link }} target='_blank' class='card' data-tilt data-tilt-scale= "1.1">
+          <div>
+            <h3 class='hilite'>{{ card.company }}</h3>
+            <br>
+            <span class='hilite'>{{ card.position }}</span>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+
+    {% for card in sorted_experience %}
+      {% if card.type == 'work' %}
+        <a href={{ card.link }} target='_blank' class='card' data-tilt data-tilt-scale= "1.1">
+          <div>
+            <h3 class='hilite'>{{ card.company }}</h3>
+            <br>
+            <span class='hilite'>{{ card.position }}</span>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 
   <div class="skills">
+    <h2>Skills</h2>
     {% for skill_cat in page.skills %}
-      <h4>{{ skill_cat.title }}</h4>
+      <h4 class="gutter-bottom--half">{{ skill_cat.title }}</h4>
       <ul>
         {% for skill in skill_cat.items %}
           <li>
