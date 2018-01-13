@@ -560,11 +560,12 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("http://andyzhang.net/img/home/htn-1.png");
   background-size: cover;
   height: 200px;
   padding: 30px;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+  background-position: bottom left;
+  background-size: cover; }
   .card:hover {
     text-decoration: none;
     z-index: 999; }
@@ -574,7 +575,8 @@ h1 {
     margin-bottom: 0;
     margin-left: -30px;
     padding: 5px 10px 10px 30px;
-    transform: translateZ(20px); }
+    transform: translateZ(20px);
+    color: #111; }
   .card h3 {
     display: inline-block;
     color: #111;
@@ -585,12 +587,14 @@ h1 {
     font-weight: bold;
     font-size: 39px; }
   .card div {
-    transform: translateZ(20px); }
+    transform: translateZ(30px); }
 
 .skills {
   padding: 30px;
   background-color: #ffffff;
   color: black; }
+  .skills h4 {
+    margin-bottom: 5px; }
   .skills li {
     display: inline-block;
     padding: 1px 8px;
@@ -611,6 +615,9 @@ h1 {
   .experience-grid a:last-child {
     content: '';
     flex-grow: 1000000000; }
+
+.hilited {
+  background-position: -95% 0; }
 
 h2, .heading-2 {
   font-family: 'UbuntuTitling-Bold', sans-serif;
@@ -634,7 +641,8 @@ h2, .heading-2 {
 
 .experience {
   display: grid;
-  grid-template-columns: auto [start] 1fr [skills] 238px; }
+  grid-template-columns: auto [start] 1fr [skills] 238px;
+  margin-bottom: 100px; }
 
 .experience-type {
   writing-mode: vertical-lr;
@@ -643,7 +651,11 @@ h2, .heading-2 {
   margin-left: -50px;
   width: 40px; }
   .experience-type h2 {
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 15px; }
+    .experience-type h2.subdued {
+      color: transparent;
+      text-shadow: rgba(255, 255, 255, 0.5) 0px 0px; }
 
 .links {
   text-align: right;

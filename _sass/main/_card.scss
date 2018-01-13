@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("http://andyzhang.net/img/home/htn-1.png");
   background-size: cover;
   height: 200px;
   padding: 30px;
   transform-style: preserve-3d;
+  background-position: bottom left;
+  background-size: cover;
   
   &:hover {
     text-decoration: none;
@@ -22,6 +23,7 @@
     margin-left: -30px;
     padding: 5px 10px 10px 30px;
     transform: translateZ(20px);
+    color: $text-color;
   }
 
   h3 {
@@ -36,7 +38,7 @@
   }
 
   div {
-    transform: translateZ(20px);
+    transform: translateZ(30px);
   }
 }
 
@@ -44,6 +46,10 @@
   padding: 30px;
   background-color: #ffffff;
   color: black;
+
+  h4 {
+    margin-bottom: 5px;
+  }
 
   li {
     display: inline-block;
@@ -73,4 +79,8 @@
     content: '';
     flex-grow: 1000000000;
   }
+}
+
+.hilited {
+  background-position: -95% 0;
 }
