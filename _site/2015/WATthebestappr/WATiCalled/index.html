@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WATiCalled - An innovative naming system for University of Waterloo Students</title>
+    <link rel="stylesheet" href="animate.css">
+    <script type = "text/javascript">
+        function sayName(){
+        var txtName = document.getElementById("txtName");
+        var txtOutput = document.getElementById("txtOutput");
+        var name = txtName.value;
+        name = name.replace(/\s+/g, '');
+        document.getElementById("yourResult").innerHTML="<div class=\"animated flip\"><i>WAT"+name+"r</i></div>";
+    } // end sayHi
+    </script>
+    
+    
+    
+</head>
+<body>
+    <div id="pad">
+        <a href="../index.html">
+                Goes Home
+        </a>
+    <h1>WatiCalled?</h1>
+    <h2>An innovative side project naming system for University of Waterloo <sup><sup><sup>Ideas Start Here<sup>®</sup></sup></sup></sup> Students</h2>
+    <p><b>What Does You're Project Do?</b><br></p>
+    
+    <form action = "">
+            <input type = "text" id = "txtName" placeholder="Enter You're Dumb Idea"/>
+            <input type = "button" value = "GenR8" onclick = "sayName()"/>
+    </form>
+    
+    <p><br><b>Our Industry Leading, Cutting Edge, Machine Learning Algorithm Has Chosen</b></p>
+    <p align="center" id="yourResult" style="font-size:40px"><i>You're Brand New Name Will Be Here</i></p><br><br><b></b>To be you're project idea name.
+    <p>Thanks for playing.</p>
+    <i align="right">
+        <p>Share us on the Facebook</p>
+        <p>Tweet us on the Tweetar</p>
+        <p>Add us on your Google Plus Circles!!!</p>
+    </i>
+    </div>
+</body>
+</html>

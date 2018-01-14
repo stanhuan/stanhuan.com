@@ -1,0 +1,80 @@
+body {
+  padding-top: 50px;
+}
+.heading{
+  padding: 40px 15px;
+  text-align: center;
+}
+#canvas-container{
+    text-align: center;
+}
+canvas{
+    border: solid black 1px;
+    width: 100%;
+    height: auto;
+}
+.canvas-container{
+    margin:0 auto;
+}
+h3{
+    margin-top: 0;
+    display: inline
+}
+h5{
+    display: inline;
+}
+button{
+    margin-top: 3px;
+    float:right
+}
+@media(max-width:767px){
+    textarea{
+        height: 60px;
+        width: 100%;
+    }
+}
+@media(min-width:768px){
+    textarea{
+        height: 60px;
+        width: 230px;
+    }
+}
+@media(min-width:992px){
+    textarea{
+        height: 161px;
+        width: 340px;
+    }
+}
+@media(min-width:1200px){
+    textarea{
+        height: 89px;
+        width: 536px;
+    }
+}
+#no-top-padding{
+    padding-top: 0px;
+}
+#no-bottom-padding{
+    padding-bottom: 0px;
+}
+table{
+    width: 100%;
+}
+td{
+    padding: 5px;
+}
+input[name=cost]{
+    width: 2px;
+}
+input[type=radio]{
+    width: auto;
+}
+input{
+    width: 100%;
+}
+.column-width{
+    width: 105px;
+}
+table{
+    margin-bottom: 10px;
+}

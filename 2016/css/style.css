@@ -1,0 +1,228 @@
+a{
+    color: black
+}
+
+p{
+    text-align: justify;
+    margin: 5px;
+}
+
+h1{
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 0px;
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 11pt;
+    text-align: center;
+}
+
+h4{
+    font-size: 12pt;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+h5{
+    color: darkgrey;
+    margin: 0;
+    padding: 0;
+}
+
+h6{
+    font-size: 18pt;
+    font-weight: 100;
+    margin: 20px 0px 20px 0px;
+}
+
+div.skill-icon{
+    width: 18%;
+    padding: 1%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'BenchNine', sans-serif;
+    padding-bottom: 9%;
+    background-color: #D2D2D2;
+    font-weight: 600;
+}
+
+span.type{
+    float: right;
+    vertical-align: bottom;
+}
+
+span.date{
+    float: left;
+    font-size: 8pt;
+    font-weight: lighter;
+    color: darkgray
+}
+
+a.skill-icon, a.expertise-icon{
+    font-size: 8pt;
+    padding: 2px 10px 2px 10px;
+    margin: 0px 2px 5px 0px;
+    color: darkgrey!important;
+}
+
+
+div.social-icon{
+    margin: 0px;
+    display: inline-block;
+    width: 20%;
+    padding-bottom: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.social-icon.email{
+    background-image: url('../images/Email.png');
+}
+div.social-icon.email:hover{
+    background-image: url('../images/Emailw.png');
+    background-color: #ea4335;
+}
+div.social-icon.linkedin{
+    background-image: url('../images/LinkedIn.png');
+}
+div.social-icon.linkedin:hover{
+    background-image: url('../images/LinkedInw.png');
+    background-color: #0077b5;
+}
+div.social-icon.design{
+    background-image: url('../images/Design%20Portfolio.png');
+}
+div.social-icon.design:hover{
+    background-image: url('../images/Design%20Portfoliow.png');
+    background-color: #ff9933;
+}
+div.social-icon.resume{
+    background-image: url('../images/resume.png');
+}
+div.social-icon.resume:hover{
+    background-image: url('../images/Resumew.png');
+    background-color: #6cc644;
+}
+div.social-icon.github{
+    background-image: url('../images/GitHub.png');
+}
+div.social-icon.github:hover{
+    background-image: url('../images/GitHub.png');
+    background-color: #810081;
+}
+
+div.social-box{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-height: 100px;
+}
+
+div.bottom-border{
+    border-bottom: 1px solid #DBDBDB;
+}
+
+div.nopadding{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#sidebar div.col{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.main-content{
+    margin-top: 30px;
+}
+
+img.hero{
+    position: fixed;
+    margin-top: 0px;
+    /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 10em;
+    width: 95%;
+    z-index: -999;
+    top: 0;
+}
+
+img.profile{
+    width: 100%;
+}
+
+img.avatar{
+    margin-top: -15px;
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    float: right;
+}
+
+div.scard-2 img.avatar{
+    position: relative;
+    top: -15px;
+}
+
+div.scard-2 h4{
+    margin: 0;
+}
+
+div.scard-2 div.avatar-holder{
+    margin-bottom: -20px;
+}
+
+div.scard-3 h6{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+div.scard-3 div.info{
+    padding: 0px;
+    padding-left: 20px;
+}
+
+div.scard-3{
+    position: relative;
+}
+
+div.scard-3 div.type{
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+div#side-hero{
+    float: left;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    background-size: cover;
+    padding-bottom: 50%;
+}
+
+img.card-hero{
+    width: calc(100% + 60px);
+    position: relative;
+    top: -15px;
+    left: -30px;
+    /*margin: -15px -100px -15px -15px;*/
+}
