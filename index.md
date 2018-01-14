@@ -50,8 +50,10 @@ skills:
         title: IBM Notes
       - id: jira
         title: JIRA
-      - id: zenhub
-        title: ZenHub
+      - id: seo
+        title: SEO
+      - id: android
+        title: Android
   - title: Design
     items:
       - id: adobe

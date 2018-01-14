@@ -8,6 +8,7 @@ dl, dd, ol, ul, figure {
   padding: 0; }
 
 html {
+  -webkit-font-smoothing: subpixel-antialiased;
   background: url(images/bg.png) no-repeat center top;
   background-color: #000000;
   background-size: contain; }
@@ -486,8 +487,8 @@ h1 {
 
 @font-face {
   font-family: 'UbuntuTitling-Bold';
-  src: url("../fonts/UbuntuTitling-Bold.eot");
-  src: url("../fonts/UbuntuTitling-Bold.ttf") format("truetype"), url("../fonts/UbuntuTitling-Bold.svg#UbuntuTitling-Bold") format("svg"), url("../fonts/UbuntuTitling-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../assets/fonts/UbuntuTitling-Bold.eot");
+  src: url("../assets/fonts/UbuntuTitling-Bold.ttf") format("truetype"), url("../assets/fonts/UbuntuTitling-Bold.svg#UbuntuTitling-Bold") format("svg"), url("../assets/fonts/UbuntuTitling-Bold.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 .name {
@@ -501,7 +502,7 @@ h1 {
   float: left;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-left: -40px; }
+  margin-left: -50px; }
   @media screen and (min-width: 768px) {
     .name {
       margin-left: -60px; } }
@@ -513,7 +514,7 @@ h1 {
       margin-left: -130px; } }
   .name.name--first {
     padding-top: 0.5rem;
-    padding-left: 30px; }
+    padding-left: 50px; }
     @media screen and (min-width: 768px) {
       .name.name--first {
         padding-left: 60px; } }
@@ -524,7 +525,7 @@ h1 {
       .name.name--first {
         padding-left: 130px; } }
   .name.name--last {
-    padding-left: 30px; }
+    padding-left: 50px; }
     @media screen and (min-width: 768px) {
       .name.name--last {
         padding-left: 60px; } }
@@ -564,14 +565,25 @@ h1 {
   height: 200px;
   padding: 30px;
   transform-style: preserve-3d;
+  transition: all 0.1s ease;
   background-position: bottom left;
   background-size: cover; }
+  @media screen and (max-width: 576px) {
+    .card {
+      transform: none !important; } }
+  .card.subdued {
+    filter: blur(2px) grayscale(90%);
+    transform: scale(0.9) !important; }
+  .card.feature {
+    box-shadow: inset 0px 0px 0px 5px #f3c900;
+    transform: scale(0.99) !important; }
   .card:hover {
     text-decoration: none;
     z-index: 999; }
     .card:hover .hilite {
       background-position: -95% 0; }
   .card span {
+    display: inline-block;
     margin-bottom: 0;
     margin-left: -30px;
     padding: 5px 10px 10px 30px;
@@ -585,14 +597,24 @@ h1 {
     margin-left: -30px;
     padding: 0 10px 0 30px;
     font-weight: bold;
-    font-size: 39px; }
+    font-size: 30px; }
   .card div {
     transform: translateZ(30px); }
+
+.sticky-skills {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px; }
 
 .skills {
   padding: 30px;
   background-color: #ffffff;
-  color: black; }
+  color: black;
+  width: 178px;
+  display: none; }
+  @media screen and (min-width: 576px) {
+    .skills {
+      display: block; } }
   .skills h4 {
     margin-bottom: 5px; }
   .skills li {
@@ -602,7 +624,8 @@ h1 {
     background-image: linear-gradient(to right, #efefef 50%, #F4C900 50%);
     background-size: 205% auto;
     animation-fill-mode: forwards;
-    transition: background-position 0.5s cubic-bezier(0, 1.01, 0.36, 0.93); }
+    transition: background-position 0.5s cubic-bezier(0, 1.01, 0.36, 0.93);
+    cursor: default; }
     .skills li:hover {
       background-position: -95% 0; }
 
@@ -624,11 +647,18 @@ h2, .heading-2 {
   text-transform: uppercase;
   margin-bottom: 0; }
 
+h1 {
+  font-weight: 700; }
+
 .hilite {
+  background-position: -95% 0;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #F4C900 50%);
   background-size: 205% auto;
   animation-fill-mode: forwards;
   transition: background-position 0.5s cubic-bezier(0, 1.01, 0.36, 0.93); }
+  @media screen and (min-width: 576px) {
+    .hilite {
+      background-position: 0 0; } }
 
 .gutter-bottom--double {
   margin-bottom: 60px; }
@@ -640,22 +670,31 @@ h2, .heading-2 {
   margin-bottom: 30px; }
 
 .experience {
-  display: grid;
-  grid-template-columns: auto [start] 1fr [skills] 238px;
-  margin-bottom: 100px; }
+  display: block;
+  margin-bottom: 100px;
+  max-width: 2200px;
+  margin-left: auto;
+  margin-right: -50px; }
+  @media screen and (min-width: 576px) {
+    .experience {
+      display: grid;
+      grid-template-columns: 1fr [skills] 238px;
+      margin-right: auto; } }
 
 .experience-type {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-align: right;
   margin-left: -50px;
-  width: 40px; }
+  width: 40px;
+  height: 585px; }
   .experience-type h2 {
     display: inline-block;
-    margin-top: 15px; }
+    margin-top: 15px;
+    cursor: pointer; }
     .experience-type h2.subdued {
       color: transparent;
-      text-shadow: rgba(255, 255, 255, 0.5) 0px 0px; }
+      text-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
 
 .links {
   text-align: right;
@@ -669,3 +708,9 @@ h2, .heading-2 {
       color: #a5a5a5; }
     .links a:hover {
       color: #cacaca; }
+
+.bio .links {
+  margin-top: 30px; }
+  .bio .links a {
+    display: inline-block;
+    margin-left: 15px; }

@@ -9,6 +9,8 @@ dl, dd, ol, ul, figure {
 }
 
 html {
+  -webkit-font-smoothing: subpixel-antialiased;
+
   background: url(images/bg.png) no-repeat center top;
   background-color: $black-color;
   background-size: contain;

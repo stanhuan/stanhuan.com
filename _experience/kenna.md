@@ -3,6 +3,7 @@ company: Kenna
 position: Web Application Developer
 time: Spring 2016
 resume-order: 3
+website-order: 7
 type: work
 link: http://kenna.ca/
 skills:

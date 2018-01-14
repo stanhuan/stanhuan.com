@@ -9,7 +9,7 @@
   float: left;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-left: -40px;
+  margin-left: -50px;
 
   @include media-query($bp-m) {
     margin-left: -60px;
@@ -25,7 +25,7 @@
 
   &.name--first {
     padding-top: 0.5rem;
-    padding-left: 30px;
+    padding-left: 50px;
 
     @include media-query($bp-m) {
       padding-left: 60px;
@@ -41,7 +41,7 @@
   }
 
   &.name--last {
-    padding-left: 30px;
+    padding-left: 50px;
 
     @include media-query($bp-m) {
       padding-left: 60px;

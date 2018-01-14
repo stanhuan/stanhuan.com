@@ -3,6 +3,7 @@ company: PointClickCare
 position: Front-End UI Developer
 time: Winter 2017
 resume-order: 2
+website-order: 3
 type: work
 link: https://pointclickcare.com/
 skills:
