@@ -34,6 +34,12 @@ skills:
         title: Python
   - title: Frameworks and Tools
     items:
+      - id: reactweb
+        title: React Web
+      - id: reactnative
+        title: React Native
+      - id: redux
+        title: Redux
       - id: rails
         title: Rails
       - id: git
@@ -54,10 +60,12 @@ skills:
         title: SEO
       - id: android
         title: Android
+      - id: vue
+        title: Vue.js
   - title: Design
     items:
       - id: adobe
-        title: Adobe Creative Suite
+        title: Adobe Suite
       - id: sketch
         title: Sketch
       - id: figma
@@ -66,6 +74,10 @@ skills:
         title: Invision
       - id: wireframing
         title: Wireframing
+      - id: prototyping
+        title: Prototyping
+      - id: product
+        title: Product Design
 ---
 
 # Crafting Pixel

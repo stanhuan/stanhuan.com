@@ -1,6 +1,6 @@
 ---
 company: Co-op Student of the Year
-position: 2017 Award Nomination
+position: 2017 Award Nomination + Outstanding Co-op performance (*4)
 website-order: 3
 title: Co-op Student of the Year Nomination
 resume-order: 1

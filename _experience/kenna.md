@@ -16,7 +16,7 @@ skills:
   - jquery
   - ibm
   - jira
-thumbnail_url: https://pbs.twimg.com/profile_banners/863076268367114240/1499889237
+thumbnail_url: ./assets/images/kenna.jpeg
 ---
 - Developed for web app used to view & edit millions of records
 - Agile development of new features according to business specification including an expandable list view with selection
