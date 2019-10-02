@@ -1,0 +1,20 @@
+{ 
+    "name":"Stanley Huang",
+    "short_name":"Stanley",
+    "start_url":"/",
+    "background_color":"#fcfcfc",
+    "theme_color":"#fcfcfc",
+    "display":"standalone",
+    "icons":[ 
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ]
+ }
