@@ -41,10 +41,19 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 900,
+              maxWidth: 1920,
               quality: 75,
               withWebp: true,
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
+            },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
             },
           },
         ],
@@ -53,8 +62,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Lewis Gatsby Starter Blog`,
-        short_name: `LGSB`,
+        name: `Stanley Huang`,
+        short_name: `Stanley`,
         start_url: `/`,
         background_color: `#fcfcfc`,
         theme_color: `#fcfcfc`,

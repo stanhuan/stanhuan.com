@@ -54,20 +54,17 @@ const Home = ({ data }) => {
       <Layout>
         <Hero>
           <HeadingXL>Crafting Pixel Perfect Experiences</HeadingXL>
-          {/* <TextHome>
-            This is a custom Gatsby starter template to start a new blog or
-            personal website.
-          </TextHome> */}
         </Hero>
-        {/* {data.allMarkdownRemark.edges.map(({ node }) => (
+        {data.allMarkdownRemark.edges.map(({ node }) => (
           <Link to={node.fields.slug}>
             <Post key={node.id}>
               <HeadingL>{node.frontmatter.title}</HeadingL>
               <TextBody>{node.excerpt}</TextBody>
-              <TextDate>{node.frontmatter.date}</TextDate>
+              {/* <TextDate>{node.frontmatter.date}</TextDate> */}
+              <img src={node.frontmatter.featuredImage} width="100%" />
             </Post>
           </Link>
-        ))} */}
+        ))}
       </Layout>
     </>
   );
@@ -84,6 +81,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            featuredImage
           }
           fields {
             slug

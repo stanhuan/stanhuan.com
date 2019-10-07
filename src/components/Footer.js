@@ -24,9 +24,6 @@ const Footer = () => {
       <ButtonLink href="mailto:stanleystanhuang@gmail.com" target="_blank">
         Email
       </ButtonLink>
-      <ButtonLink href="https://medium.com/@stanhuan" target="_blank">
-        Medium
-      </ButtonLink>
       <ButtonLink
         href="https://www.linkedin.com/in/stanhuan/"
         target="_blank"

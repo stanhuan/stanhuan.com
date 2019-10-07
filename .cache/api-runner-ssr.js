@@ -3,10 +3,10 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/stanleyh/Documents/stanhuan.github.io/node_modules/gatsby-remark-images/gatsby-ssr'),
-      options: {"plugins":[],"maxWidth":900,"quality":75,"withWebp":true,"linkImagesToOriginal":false},
+      options: {"plugins":[],"maxWidth":1920,"quality":75,"withWebp":true,"linkImagesToOriginal":true},
     },{
       plugin: require('/Users/stanleyh/Documents/stanhuan.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Lewis Gatsby Starter Blog","short_name":"LGSB","start_url":"/","background_color":"#fcfcfc","theme_color":"#fcfcfc","display":"standalone"},
+      options: {"plugins":[],"name":"Stanley Huang","short_name":"Stanley","start_url":"/","background_color":"#fcfcfc","theme_color":"#fcfcfc","display":"standalone"},
     },{
       plugin: require('/Users/stanleyh/Documents/stanhuan.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},

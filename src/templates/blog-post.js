@@ -19,7 +19,7 @@ export default ({ data }) => {
       <HeaderBack />
       <Layout>
         <HeadingXL>{post.frontmatter.title}</HeadingXL>
-        <TextDate>{post.frontmatter.date}</TextDate>
+        {/* <TextDate>{post.frontmatter.date}</TextDate> */}
         <TextBody dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
     </>
