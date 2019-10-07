@@ -1,7 +1,7 @@
 ---
 title: 6 ways you're sabotaging your own success
 subtitle: Design Challenge
-date: '2019-03-06'
+date: '2019-02-28'
 featuredImage: https://cdn-images-1.medium.com/max/10368/1*5MKimjltiUZb0k2UlKDXnQ.jpeg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Designing a clothing inventory app
 subtitle: Design Challenge
-date: '2019-03-06'
+date: '2019-03-04'
 featuredImage: https://cdn-images-1.medium.com/max/3810/1*G-e0ozfQokygbYU0JZmBHA.png
 ---
 

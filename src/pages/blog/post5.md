@@ -1,7 +1,7 @@
 ---
 title: Developing an employee directory application
 subtitle: Design Challenge
-date: '2019-03-06'
+date: '2019-03-02'
 featuredImage: https://cdn-images-1.medium.com/max/4668/1*gIqVzDCxb3RqbXMLmdXKIQ.png
 ---
 

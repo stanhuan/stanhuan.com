@@ -1,7 +1,7 @@
 ---
 title: Implementing a collaborative knowledge management system
 subtitle: Design Challenge
-date: '2019-03-06'
+date: '2019-03-01'
 featuredImage: https://cdn-images-1.medium.com/max/4092/1*dfx_vc6N3F7vHuzPppVahQ.png
 ---
 

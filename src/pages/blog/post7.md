@@ -1,7 +1,7 @@
 ---
 title: Developing software for international markets
 subtitle: Design Challenge
-date: '2019-03-06'
+date: '2019-02-29'
 featuredImage: https://cdn-images-1.medium.com/max/5334/1*wDyC0S_Dac5JXavltlTl8A.jpeg
 ---
 

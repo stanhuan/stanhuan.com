@@ -1,7 +1,7 @@
 ---
 title: Creating Blimp, a personal dashbaord experience
 subtitle: Design Challenge
-date: '2019-03-06'
+date: '2019-03-03'
 featuredImage: https://cdn-images-1.medium.com/max/2752/1*ncewmJcZEgU2kyKIpDQQTA.png
 ---
 
