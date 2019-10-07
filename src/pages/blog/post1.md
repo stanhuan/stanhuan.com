@@ -5,8 +5,9 @@ date: '2019-03-06'
 featuredImage: ./post1/about-htn.png
 ---
 
+Leading a design team to evolve the visual experience for **Hack the North** through the web, print, digital, and swag, now bigger, brighter and friendlier than ever!
+
 **Team**: [Aman Mathur](https://amanmathur.com/), [Annie Xu](https://www.anniehxu.com/), [Mudmie Chuthamsatid](https://www.mudmie.com/), and [Vevina Trinh](https://vevevev.ca/)
-**Summary**: Evolving the visual experience for Canada's Biggest Hackathon, now bigger, brighter and friendlier than ever!
 
 <br/><br/>
 
@@ -121,7 +122,7 @@ Traditionally, Hack the North has had an all-blue colour scheme that has dominat
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s_FhBuN769I?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-_View the Hack the North 2019 promo video with the new branding (Created by: Grip Films)_
+_View the Hack the North 2019 promo video with the new branding (Created by Grip Films)_
 
 <br/>
 
@@ -230,7 +231,7 @@ _Gear slideshow, featuring images from the event_
 
 This year, I also experimented with new ways to present useful information. One new addition was a gear slideshow, **highlighting the inspiring mentors, fun activities, new people, and state-of-the-art hardware available at the event**. I also added a carousel featuring first-hand accounts and pictures of event attendees to **inspire and motivate those visiting** the site to apply and highlighting the **unique experiences and diversity** of our attendees.
 
- We also had access to **HotJar and Google Analytics** which allowed us to analyze which parts of the website were performing well and could make modifications necessary. An example of this is the attendee showcase section. Originally, this section did not auto-scroll between user stories. When we noticed the heatmap didn't show a lot of user's interacting with the section, we added the auto-scroll functionality which **boosted engagement to that section**.
+ We also had access to **HotJar and Google Analytics** which allowed us to analyze which parts of the website were performing well and could make modifications necessary. An example of this is the attendee showcase section. Originally, this section did not auto-scroll between user stories. When we noticed the heatmap didn't show a lot of people interacting with the section, we added the auto-scroll functionality which **boosted engagement to that section**.
 
 <br/>
 <br/> 

@@ -12,6 +12,8 @@ import {
   TextDate,
 } from '../components';
 
+import styles from './index.module.css';
+
 const Hero = styled.div`
   margin-bottom: 20vh;
 

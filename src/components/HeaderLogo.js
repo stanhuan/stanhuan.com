@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import { FixedBar } from '../components';
+import ButtonLink from './ButtonLink';
 
 const HeaderWrapper = styled(FixedBar)`
   justify-content: space-between;
@@ -21,9 +22,12 @@ const HeaderLogo = () => {
   return (
     <HeaderWrapper>
       <Logo>Stanley Huang</Logo>
-      {/* <Link to="/about">
-        <p>About</p>
-      </Link> */}
+      <ButtonLink href="/resume.pdf" target="_blank">
+        Resume
+      </ButtonLink>
+      <ButtonLink href="mailto:stanleystanhuang@gmail.com" target="_blank">
+        Email
+      </ButtonLink>
     </HeaderWrapper>
   );
 };
