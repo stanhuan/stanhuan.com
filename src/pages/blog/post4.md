@@ -5,7 +5,7 @@ date: '2019-03-03'
 featuredImage: https://cdn-images-1.medium.com/max/2752/1*ncewmJcZEgU2kyKIpDQQTA.png
 ---
 
-As part of my Software Engineering degree, the [Fourth Year Design Project (FYDP) or Capstone](https://uwaterloo.ca/capstone-design/) is a year long group project to conceptualize and design a software project. My group members (Holly, Bhavika, Riley, Samuel) and I decided to create a new product in the area of data visualization and user experience.
+As part of my Software Engineering degree, the [Fourth Year Design Project (FYDP) or Capstone](https://uwaterloo.ca/capstone-design/) is a year long group project to conceptualize and design a software project. My group members and I decided to create a new product in the area of data visualization and user experience.
 
 ![Illustration from [unDraw](https://undraw.co/)](https://cdn-images-1.medium.com/max/2752/1*ncewmJcZEgU2kyKIpDQQTA.png)
 
@@ -433,7 +433,3 @@ Putting it all together with Redux, we have an application state as the followin
 ## Conclusion
 
 In conclusion, this report outlined what Blimp, a personalized, responsive, customizable dashboard is and the high level architecture to create an application like this. Next we went in detail about the technical implementation of a widget and how the layout structure will work. Finally we put it all together and took a look at how it would appear in the Redux state and went through an example. At the time of writing this report, these were the main technical considerations of our project. We encountered these challenges and expect to encounter more because of our focus on the user experience which means doing more behind the scenes to make our application a great experience for our users.
-
-## Acknowledgement
-
-I want to thank Holly Oegema, Bhavika Sharma, Riley Gowanlock and Samuel San, who are all part of my Capstone group and played an equal role in this project and helped me make a lot of implementation decisions.
