@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-import posed, { PoseGroup } from 'react-pose';
-import { timeout } from 'constants/transition';
+import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
+import posed, { PoseGroup } from "react-pose";
+import { timeout } from "constants/transition";
 
 class Transition extends PureComponent {
   render() {
@@ -9,7 +9,7 @@ class Transition extends PureComponent {
 
     const RoutesContainer = posed.div({
       enter: { opacity: 1, delay: timeout, delayChildren: timeout },
-      exit: { opacity: 0 },
+      exit: { opacity: 0 }
     });
 
     // To enable page transitions on mount / initial load,
@@ -24,7 +24,7 @@ class Transition extends PureComponent {
 
 Transition.propTypes = {
   children: PropTypes.node.isRequired,
-  location: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 };
 
 export default Transition;

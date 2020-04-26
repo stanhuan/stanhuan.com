@@ -1,13 +1,13 @@
-import React from 'react';
-import { renderToString } from 'react-dom/server';
-import { ServerStyleSheet } from 'styled-components';
-import AppProvider from 'store/provider';
-import wrapPageElementWithTransition from 'helpers/wrapPageElement';
+import React from "react";
+import { renderToString } from "react-dom/server";
+import { ServerStyleSheet } from "styled-components";
+import AppProvider from "store/provider";
+import wrapPageElementWithTransition from "helpers/wrapPageElement";
 
 export const replaceRenderer = ({
   bodyComponent,
   replaceBodyHTMLString,
-  setHeadComponents,
+  setHeadComponents
 }) => {
   // React Context in SSR/build
   const ConnectedBody = () => <AppProvider>{bodyComponent}</AppProvider>;
@@ -15,6 +15,7 @@ export const replaceRenderer = ({
 
   // Add styled-components in SSR/build
   const sheet = new ServerStyleSheet();
+  // eslint-disable-next-line no-unused-vars
   const bodyHTML = renderToString(sheet.collectStyles(<ConnectedBody />));
   const styleElement = sheet.getStyleElement();
   setHeadComponents(styleElement);

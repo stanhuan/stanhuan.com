@@ -1,16 +1,16 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  siteTitle: `Gatsby Universal`,
-  siteTitleShort: `GatsbyU`,
-  siteDescription: `An opinionated starter for Gatsby.`,
-  siteUrl: `https://gu.fabianschultz.com`,
-  themeColor: `#000`,
-  backgroundColor: `#fff`,
+  siteTitle: "Stanley Huang",
+  siteTitleShort: "stanhuan.com",
+  siteDescription:
+    "Stanley Huang is a Software Engineer, Designer and Product Thinker.",
+  siteUrl: "https://stanhuan.com",
+  themeColor: "#fff",
+  backgroundColor: "#000",
   pathPrefix: null,
-  logo: path.resolve(__dirname, 'src/images/icon.png'),
+  logo: path.resolve(__dirname, "src/images/icon.png"),
   social: {
-    twitter: `gatsbyjs`,
-    fbAppId: `966242223397117`,
-  },
+    twitter: "stanhuan"
+  }
 };

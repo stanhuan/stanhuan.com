@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 let io;
 const listeners = [];
 
-function getIO(rootMargin = '-50px') {
+function getIO(rootMargin = "-50px") {
   if (
-    typeof io === 'undefined' &&
-    typeof window !== 'undefined' &&
+    typeof io === "undefined" &&
+    typeof window !== "undefined" &&
     window.IntersectionObserver
   ) {
     io = new window.IntersectionObserver(
@@ -51,7 +51,7 @@ export default class IO extends Component {
     this.state = {
       isVisible: false,
       hasBeenVisible: false,
-      IOSupported: false,
+      IOSupported: false
     };
   }
 
@@ -62,15 +62,15 @@ export default class IO extends Component {
     let IOSupported = false;
 
     // Intersection Observer polyfill
-    if (typeof window !== 'undefined' && !window.IntersectionObserver) {
-      await import('intersection-observer').then(() => {
+    if (typeof window !== "undefined" && !window.IntersectionObserver) {
+      await import("intersection-observer").then(() => {
         // eslint-disable-next-line no-console
-        console.log('IntersectionObserver polyfill injected.');
+        console.log("IntersectionObserver polyfill injected.");
       });
     }
 
     // Check if browser (now) supports IntersectionObserver
-    if (typeof window !== 'undefined' && window.IntersectionObserver) {
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
       isVisible = false;
       hasBeenVisible = false;
       IOSupported = true;
@@ -80,7 +80,7 @@ export default class IO extends Component {
       {
         isVisible,
         hasBeenVisible,
-        IOSupported,
+        IOSupported
       },
       this.listenToIntersections
     );
@@ -127,5 +127,5 @@ export default class IO extends Component {
 
 IO.propTypes = {
   children: PropTypes.func.isRequired,
-  rootMargin: PropTypes.string,
+  rootMargin: PropTypes.string
 };
