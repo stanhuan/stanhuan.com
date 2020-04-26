@@ -1,94 +1,60 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import Layout from 'components/layout';
+import Box from 'components/box';
+import Title from 'components/title';
+import Gallery from 'components/gallery';
+import IOExample from 'components/io-example';
+import Modal from 'containers/modal';
+import { graphql } from 'gatsby';
 
-import {
-  HeaderLogo,
-  HeadingXL,
-  HeadingL,
-  Layout,
-  SEO,
-  TextBody,
-  TextDate,
-} from '../components';
+const Index = ({ data }) => (
+  <Layout>
+    <Box>
+      <Title as="h2" size="large">
+        {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
+      </Title>
+      <Modal>
+        <video
+          src="https://i.imgur.com/gzFqNSW.mp4"
+          playsInline
+          loop
+          autoPlay
+          muted
+        />
+      </Modal>
+    </Box>
+    <Gallery items={data.homeJson.gallery} />
+    <div style={{ height: '50vh' }} />
+    <IOExample />
+  </Layout>
+);
 
-import styles from './index.module.css';
-
-const Hero = styled.div`
-  margin-bottom: 20vh;
-
-  @media (max-width: 849px) {
-    margin-bottom: 15vh;
-  }
-`;
-
-const TextHome = styled.p`
-  display: block;
-  max-width: 28em;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10vh;
-
-  font-size: 22px;
-  line-height: 1.6;
-  color: var(--dark-color-light);
-
-  @media (max-width: 849px) {
-    font-size: 19px;
-  }
-`;
-
-const Post = styled.div`
-  border-bottom: 1px solid lightgray;
-  margin-bottom: 50px;
-
-  @media (max-width: 849px) {
-    padding-left: 0;
-  }
-`;
-
-const Home = ({ data }) => {
-  return (
-    <>
-      <SEO title="Blog" />
-      <HeaderLogo />
-      <Layout>
-        <Hero>
-          <HeadingXL>Crafting Pixel Perfect Experiences</HeadingXL>
-        </Hero>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Link to={node.fields.slug}>
-            <Post key={node.id}>
-              <HeadingL>{node.frontmatter.title}</HeadingL>
-              <TextBody>{node.excerpt}</TextBody>
-              {/* <TextDate>{node.frontmatter.date}</TextDate> */}
-              <img src={node.frontmatter.featuredImage} width="100%" />
-            </Post>
-          </Link>
-        ))}
-      </Layout>
-    </>
-  );
+Index.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
-export default Home;
+export default Index;
 
 export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            featuredImage
+  query HomepageQuery {
+    homeJson {
+      title
+      content {
+        childMarkdownRemark {
+          html
+          rawMarkdownBody
+        }
+      }
+      gallery {
+        title
+        copy
+        image {
+          childImageSharp {
+            fluid(maxHeight: 500, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
           }
-          fields {
-            slug
-          }
-          excerpt
         }
       }
     }
